@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/images/icon-logo.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>BONO</title>
+	</head>
+	<body>
+		<header class="header container">
+			<a href="#" class="header__logo"></a>
+			<div class="header__content">
+				<nav class="header__navigation">
+					<a href="#" class="header__navigation-link">Конференция</a>
+					<a href="#" class="header__navigation-link">Программа</a>
+					<a href="#" class="header__navigation-link">Спикеры</a>
+					<a href="#" class="header__navigation-link">Фото</a>
+					<a href="#" class="header__navigation-link">Материалы</a>
+				</nav>
+				<button class="header__registration-button">Регистрация</button>
+
+				<div class="socials header__socials">
+					<a href="#" class="socials__link socials__link--email" aria-label="Email"> </a>
+					<a href="#" class="socials__link socials__link--facebook" aria-label="Facebook"> </a>
+				</div>
+			</div>
+
+			<button class="header__mobile-menu"></button>
+
+			<aside class="mobile-menu" id="menu">
+				<div class="mobile-menu__body">
+					<nav class="mobile-menu__navigation">
+						<a href="#" class="mobile-menu__navigation-link">Конференция</a>
+						<a href="#" class="mobile-menu__navigation-link">Программа</a>
+						<a href="#" class="mobile-menu__navigation-link">Спикеры</a>
+						<a href="#" class="mobile-menu__navigation-link">Фото</a>
+						<a href="#" class="mobile-menu__navigation-link">Материалы</a>
+					</nav>
+					<button class="mobile-menu__body-button">Регистрация</button>
+
+					<div class="socials mobile-menu__socials">
+						<a href="#" class="socials__link socials__link--email" aria-label="Email"></a>
+						<a href="#" class="socials__link socials__link--facebook" aria-label="Facebook">
+						</a>
+					</div>
+				</div>
+			</aside>
+		</header>
+
+		<main class="main">
+			<section class="hero-section container">
+				<img class="hero-section__image-1" src="/images/image-hero-1.svg" alt="info" />
+				<button class="hero-section__button">зарегистрироваться</button>
+				<img class="hero-section__image-2" src="/images/image-hero-2.svg" alt="info" />
+				<div class="hero-section__content">
+					<h1 class="hero-section__content-title">
+						Команда рекламного холдинга GroupM рада открыть для вас двери digital-конференции
+						NextM!
+					</h1>
+					<p class="hero-section__content-descr">
+						NextM – это ежегодная digital-конференция, организованная ведущей международной
+						рекламной группой GroupM, входящей в состав коммуникационного холдинга WPP и
+						представленной в России агентствами Mindshare, MediaCom и Wavemaker.
+					</p>
+				</div>
+				<span class="hero-section__arrow"></span>
+			</section>
+
+			<section class="speakers-section container">
+				<h2 class="speakers-section__title">Спикеры</h2>
+
+				<div class="speakers-section__slider-wrapper">
+					<div class="slider swiper">
+						<div class="slider__wrapper swiper-wrapper">
+							<div class="slider__item swiper-slide">
+								<img
+									class="slider__item-img"
+									src="/images/slider-img.jpg"
+									alt="Ярон Фаризон" />
+								<div class="slider__item-info">
+									<h3 class="slider__item-name">Ярон Фаризон</h3>
+									<p class="slider__item-profession">CEO MediaCom</p>
+								</div>
+							</div>
+							<div class="slider__item swiper-slide">
+								<img
+									class="slider__item-img"
+									src="/images/slider-img.jpg"
+									alt="Ярон Фаризон" />
+								<div class="slider__item-info">
+									<h3 class="slider__item-name">Ярон Фаризон2</h3>
+									<p class="slider__item-profession">CEO MediaCom</p>
+								</div>
+							</div>
+							<div class="slider__item swiper-slide">
+								<img
+									class="slider__item-img"
+									src="/images/slider-img.jpg"
+									alt="Ярон Фаризон" />
+								<div class="slider__item-info">
+									<h3 class="slider__item-name">Ярон Фаризон3</h3>
+									<p class="slider__item-profession">CEO MediaCom</p>
+								</div>
+							</div>
+						</div>
+						<div class="slider__pagination"></div>
+					</div>
+					<button class="slider__btn slider__btn--next"></button>
+					<button class="slider__btn slider__btn--prev"></button>
+				</div>
+			</section>
+
+			<section class="feedback-section container">
+				<div class="feedback-section__content">
+					<h2 class="feedback-section__title">Отправить сообщение</h2>
+					<form action="#" class="feedback-section__form">
+						<div class="feedback-section__form-inputs">
+							<input
+								type="text"
+								name="name"
+								class="feedback-section__form-input"
+								placeholder="Ваше имя" />
+							<input
+								type="email"
+								name="email"
+								class="feedback-section__form-input"
+								placeholder="E-mail" />
+						</div>
+						<textarea
+							class="feedback-section__form-input"
+							name="message"
+							placeholder="Ваше сообщение"></textarea>
+						<button type="submit" class="feedback-section__form-submit-button">отправить</button>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer class="footer container">
+      <a class="footer__link" href="mailto:info@groupmnextm.ru">info@groupmnextm.ru</a>
+      <a class="footer__link" href="tel:+74956414080">+7 (495) 641-40-80</a>
+      <a class="footer__policy" href="#">Правовая информация</a>
+    </footer>
+		<script type="module" src="/src/main.ts"></script>
+	</body>
+</html>

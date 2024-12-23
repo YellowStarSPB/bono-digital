@@ -1,0 +1,28 @@
+/* Префикс в названии шрифта для того, чтобы не тянулся системный шрифт */
+@font-face {
+	font-family: HelveticaNeue-bdtz;
+	src: url('/fonts/HelveticaNeue-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: HelveticaNeue-bdtz;
+	src: url('/fonts/HelveticaNeue-Regular.woff') format('woff');
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: HelveticaNeue-bdtz;
+	src: url('/fonts/HelveticaNeue-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+@font-face {
+	font-family: HelveticaNeue-bdtz;
+	src: url('/fonts/HelveticaNeue-Bold.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}

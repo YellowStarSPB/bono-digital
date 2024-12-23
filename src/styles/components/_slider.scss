@@ -1,0 +1,152 @@
+.slider {
+	// .slider__wrapper
+
+	&__wrapper {
+	}
+
+	// .slider__item
+
+	&__item {
+		position: relative;
+		width: 100%;
+	}
+
+	// .slider__item-img{
+	&__item-img {
+		width: 100%;
+		height: 100%;
+		min-height: 332px;
+		object-fit: contain;
+	}
+
+	// .slider__item-info
+
+	&__item-info {
+		width: 100%;
+		padding: 16px 24px;
+		background-color: var(--light-blue);
+		position: absolute;
+		bottom: 0;
+	}
+
+	// .slider__item-name
+
+	&__item-name {
+		font-weight: 500;
+		font-size: 24px;
+		line-height: 100%;
+		margin-bottom: 16px;
+	}
+
+	// .slider__item-profession
+
+	&__item-profession {
+	}
+
+	//. slider__btn
+	&__btn {
+		display: none;
+
+		//. slider__btn--next
+		&--next {
+		}
+		//. slider__btn--prev
+		&--prev {
+		}
+	}
+
+	// .slider__pagination
+
+	&__pagination {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 48px;
+		.swiper-pagination-bullet {
+			display: block;
+			border-radius: 50%;
+			background-color: #e4e4e4;
+			width: 12px;
+			height: 12px;
+			margin: 0 17px;
+			transition: background 0.3s ease-in-out;
+			&.swiper-pagination-bullet-active {
+				background-color: var(--dark-blue);
+			}
+		}
+	}
+
+	@media screen and (min-width: 1239.99px) {
+		width: 760px;
+		// .slider__wrapper
+
+		&__wrapper {
+		}
+
+		// .slider__item
+
+		&__item {
+		}
+
+		// .slider__item-img{
+		&__item-img {
+			min-height: 376px;
+		}
+
+		// .slider__item-info
+
+		&__item-info {
+		}
+
+		// .slider__item-name
+
+		&__item-name {
+		}
+
+		// .slider__item-profession
+
+		&__item-profession {
+		}
+
+		//. slider__btn
+		&__btn {
+			display: block;
+			width: 84px;
+			height: 28px;
+			filter: invert(1);
+			position: absolute;
+			transition: opacity 0.3s ease-in-out;
+			&:hover {
+				opacity: 0.7;
+			}
+
+			//. slider__btn--next
+
+			&--next {
+				right: 100px;
+				bottom: 50%;
+				transform: translateY(-50%) rotate(-90deg);
+				background: url('/images/icon-arrow.svg') center/contain no-repeat;
+			}
+
+			//. slider__btn--prev
+
+			&--prev {
+				left: 100px;
+				bottom: 50%;
+				background: url('/images/icon-arrow.svg') center/contain no-repeat;
+				transform: translateY(-50%) rotate(90deg);
+			}
+		}
+
+		// .slider__pagination
+
+		&__pagination {
+			.swiper-pagination-bullet {
+        cursor: pointer;
+				&.swiper-pagination-bullet-active {
+				}
+			}
+		}
+	}
+}

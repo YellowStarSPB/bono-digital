@@ -1,0 +1,44 @@
+@mixin button-with-border {
+	border: 2px solid var(--accent-color);
+	padding: 8px 0;
+	font-size: 22px;
+	line-height: 1;
+	color: var(--accent-color);
+	@media screen and (min-width: 1239.98px) {
+		transition: opacity 0.3s ease-in-out;
+		font-size: 16px;
+		line-height: normal;
+		width: 160px;
+		height: 35px;
+		&:hover {
+			opacity: 0.7;
+		}
+	}
+}
+@mixin main-button {
+	padding: 24px 0;
+	background: var(--accent-color);
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 140%;
+	letter-spacing: 0.5em;
+	text-align: center;
+	text-transform: uppercase;
+	color: var(--white);
+	@media screen and (min-width: 1239.98px) {
+		transition: background-color 0.3s ease-in-out;
+		&:hover {
+			background-color: var(--hover-button);
+		}
+	}
+}
+
+@mixin title-level-2($color) {
+	font-weight: 300;
+	font-size: 40px;
+	line-height: 140%;
+	color: $color;
+	@media screen and (min-width: 1239.99px) {
+		font-size: 60px;
+	}
+}

@@ -1,0 +1,11 @@
+:root {
+    --padding-x: 24px;
+    --header-height: 60px;
+}
+
+@media (min-width: 1239.98px) {
+    :root {
+        --padding-x: calc(50% - 572px);
+        --header-height: 74px;
+    }
+}
